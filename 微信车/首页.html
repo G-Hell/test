@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>码上辰献</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+	/* body{background: #ccc;} */
+	#box{width:640px; margin:auto;height: 1008px; background:  url(images/bg01.jpg) 0 0 no-repeat; position: relative; background-size:100% 100%;}
+	#part1{width: 640px; height: 271px; background:  url(images/bg02.jpg) 0 0 no-repeat;}
+	#part2{width: 640;height: 223px; position: relative;}
+	#part2 img{position: absolute; left:75px;top: 25px;}
+	#part3{margin:52px 100px;}
+    #part3 p{background:  url(images/btn01.png) 0 0 no-repeat;width: 437px;height: 98px;  border-radius: 20px; margin-bottom: 16px;}
+    #part3 .st{font-size: 41px; font-style: italic; color: #fff; line-height: 98px; text-align: center; cursor: pointer;}
+    #part3 div{font-size: 37px; font-style: italic; color: #013b8d; text-align: center; text-decoration: underline; padding-top:8px ; cursor: pointer;}
+    #fg{width: 640px;height: 1008px; position: absolute;left: 0;top: 0; background: #000; opacity: 0.5; filter: alpha(opacity=50);display: none;}
+    /* 在车展马上拿奖弹窗 */
+    #qrtc{border:8px solid #01379b;width: 588px; height: 528px;border-radius: 20px;position: absolute; left: 22px;top: 125px; background: #fff; display: none;}
+    #qrtc .div1{margin-top: 48px;}
+    #qrtc .div1 p{font-size:39px; color: #032974; text-align: center; margin: 12px 0;}
+    #qrtc .div2{margin-top:5px; padding-left: 71px;}
+    #qrtc .div2 p{font-size:48px;font-style: italic; color: #fff;width: 436px; height: 99px; text-align: center; line-height: 99px; background:  url(images/btn01.png) 0 0 no-repeat; margin-bottom: 20px;cursor: pointer;}
+    /* 活动说明 */
+    #hdsm{border:8px solid #01379b;width: 582px; height: 723px;border-radius: 20px;position: absolute; left: 22px;top: 120px; background: #fff; display: none;}
+    #hdsm .div1{margin-top: 45px;width: 530px; margin-left: 31px; }
+    #hdsm .div1 h3{font-size: 28px; color: #002b80; }
+    #hdsm .div1 p{font-size: 25px; color: #646464; text-indent: 2em;line-height: 30px;margin:18px;}
+    #hdsm .div2 p{background:  url(images/btn01.png) 0 0 no-repeat;width: 434px;height: 93px;  border-radius: 20px;margin-left: 72px;font-size: 48px;font-style: italic; color: #fff; line-height: 93px; text-align:center;cursor: pointer;}
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div>
+			<div id="part1"></div>
+			<div id="part2">
+				<img src="images/msyl.png" alt="">
+			</div>
+			<div id="part3">
+				<p id="bt1" class="st">我在车展&nbsp马上拿奖</p>
+				<p id="bt2" class="st">不在现场&nbsp试试手气</p>
+				<div id="hd">活动说明</div>
+			</div>
+		</div>
+		<div id="fg"></div>
+			<!-- 确认弹窗 -->
+		<div id="qrtc">
+			<div class="div1">
+				<p>请确认你是否在车展现场</p>
+				<p>以免无法兑奖</p>
+				<p>不在车展现场还可抽取话费哦！</p>
+			</div>
+			<div class="div2">
+				<p id="qd">确定</p>
+				<p id="cxxz">重新选择</p>
+			</div>
+		</div>
+		<!-- 活动说明弹窗 -->
+		<div id="hdsm">
+			<div class="div1">
+				<h3>活动说明:</h3>
+				<p>抽奖活动哪加强，东风日产看启辰，广州车展期间，启辰君为您准备了多彩铅笔套装，购车代金券，晨风模型，手机好话费等精美礼品；</p>
+				<p>车展现场参与活动的用户百分百中奖，留下联系方式更有机会赢取留下联系方式更有机会留下联系方式更有机会留下联系方式更有机会留下联系方式更有机会</p>
+				<p>心动了吗？那就马上行动吧！</p>
+				<p>抽奖活动哪加强，东风日产看启辰，广州车展期间，启辰君为您准备了多彩铅笔套装，购车代金券，晨风模型，手机好话费等精美礼品；</p>
+			</div>	
+			<div class="div2">
+				<p>马上抽奖</p>
+			</div>
+			
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/ort.js"></script>
+<script>
+	// function resetPage() {
+	// 	var deviceWidth = document.documentElement.clientWidth;
+	// 	var scale = deviceWidth/640;
+	// 	document.body.style.zoom = scale;
+	// }
+	// resetPage();
+	// window.onresize = function(){
+	// 	resetPage();
+	// }
+	// var fg=document.getElementById('fg');
+	// var qrtc=document.getElementById('qrtc');
+	// var bt1=document.getElementById('bt1');
+	// bt1.onclick=function(){
+	// 	fg.style.display='block';
+	// 	qrtc.style.display='block';
+	// }
+
+// 现场抽奖弹窗操作
+	$('#bt1').click(function(){
+		// alert('nihao');
+		// var z=$('#box').height();
+		// alert(z);
+		$('#fg').css('display','block');
+		$('#qrtc').css('display','block');
+	});
+	//确定跳转页面
+	$('#qd').click(function(){
+		//跳转页面
+		self.location='现场留资.html'; 
+	});
+	$('#cxxz').click(function(){
+		$('#fg').css('display','none');
+		$('#qrtc').css('display','none');
+	});
+//不在现场
+  	$('#bt2').click(function(){
+  		self.location='抽奖.html';
+  	});	
+//活动说明操作
+	$('#hd').click(function(){
+		// alert('nihao');
+		$('#fg').css('display','block');
+		$('#hdsm').css('display','block');
+	});
+	$('#hdsm .div2').click(function(){
+		$('#fg').css('display','none');
+		$('#hdsm').css('display','none');
+	});
+</script>
+</html>
